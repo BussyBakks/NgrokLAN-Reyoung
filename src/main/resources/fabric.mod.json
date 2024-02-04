@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ngroklan",
+  "version": "${version}",
+
+  "name": "NgrokLAN",
+  "description": "Exposes your local LAN server to the internet with MAGIC of Ngrok.\nNow reforked to 1.16.5 by thenoppy12 (.thenoppy12#0)",
+  "authors": [
+    "Original: Alujjdnd, Flooflez"
+  ],
+  "contact": {
+    "homepage": "https://thenoppy12.github.io",
+    "sources": "https://github.com/Alujjdnd/Ngrok-LAN",
+    "issues": "https://github.com/Alujjdnd/Ngrok-LAN/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/ngroklan/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.thenoppy12.ngroklan.NgrokLan"
+    ],
+    "modmenu": [ 
+      "net.thenoppy12.ngroklan.config.ModMenuIntegration"
+    ]
+  },
+
+  "contributors": [
+    "Reforked to 1.16.5: thenoppy12 (.thenoppy12#0)",
+    "Modified by: thenoppy12 (.thenoppy12#0)",
+    "Tester: ミ★тнιệи★彡 (thien9482#0)"
+  ],
+
+  "mixins": [
+    "ngroklan.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "java": ">=16",
+    "lanoperators": "*",
+    "modmenu": "*"
+  },
+
+  "suggests": {
+    "another-mod": ""
+  },
+
+  "custom": {
+    "modmenu": {
+      "parent": {
+        "id": "thenoppy12",
+        "name": ".thenoppy12 Universe",
+        "description": "Group of STUPID peoples who make STUPID mods:)",
+        "icon": "assets/ngroklan/groupicon.png"
+      },
+
+      "update_checker": false
+    }
+  }
+}
